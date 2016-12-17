@@ -238,47 +238,7 @@ class AdminController extends Controller
 
             $chart = \Lava::LineChart('GradesL', $gradesTable, ['title' => 'Line Chart']);
 
-            // $credits = Courses::where('course_id', $value['course_id'])->get(array('credits'))->first();
-            // $credits = $credits['credits'];
-            // $grades = Marks::where('course_id', $value['course_id'])->get(array('clg_id', 'grade'));
-             
-            // $totalcredits = $credits + $totalcredits; 
-            //  $grades = json_decode($grades,true);
-                         
-            //     foreach ($grades as $key => $value) {
-            //         switch ($value['grade']) {
-            //             case 'A+':
-            //                      $value['gpa'] = 10 * $credits + $value['gpa'];
-            //                 break;
-            //             case 'A':
-            //                      $value['gpa'] = 9 * $credits + $value['gpa'];
-            //                 break;
-            //             case 'B+':
-            //                      $value['gpa'] = 8 * $credits + $value['gpa'];
-            //                 break;
-            //             case 'B':
-            //                      $value['gpa'] = 7 * $credits + $value['gpa'];
-            //                 break;
-            //             case 'C+':
-            //                      $value['gpa'] = 6 * $credits + $value['gpa'];
-            //                 break;
-            //             case 'C':
-            //                      $value['gpa'] = 5 * $credits + $value['gpa'];
-            //                 break;
-            //             case 'D':
-            //                      $value['gpa'] = 4 * $credits + $value['gpa'];
-            //                 break;
-            //             case 'F':
-            //                      $value['gpa'] = 3 * $credits + $value['gpa'];
-            //                 break;
-                        
-            //             default:
-            //                 $value['gpa'] = 0;
-            //                 break;
-            //         }
-
-            //         echo $value['gpa']."<br>";
-            //     }
+            
             }
              return view('grades', compact('courses'));
     }
